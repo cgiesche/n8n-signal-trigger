@@ -1,0 +1,33 @@
+{
+  "name": "n8n-signal-trigger",
+  "version": "1.0.0",
+  "description": "A signal messenger trigger node for n8n that uses signal-cli-rest-api.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && npx copyfiles -u 1 nodes/SignalTrigger/signal-logo.svg dist/nodes"
+  },
+  "author": "Christoph Giesche",
+  "license": "MIT",
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "nodes": [
+      "dist/nodes/SignalTrigger/SignalTrigger.node.js"
+    ]
+  },
+  "dependencies": {
+    "reconnecting-websocket": "^4.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.19",
+    "@types/ws": "^8.18.1",
+    "@typescript-eslint/parser": "~8.32.0",
+    "copyfiles": "^2.4.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-n8n-nodes-base": "^1.16.3",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "^1.82.0"
+  }
+}
