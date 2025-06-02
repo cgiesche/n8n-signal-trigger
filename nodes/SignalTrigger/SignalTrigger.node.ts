@@ -44,7 +44,7 @@ export class SignalTrigger implements INodeType {
         const phoneNumber = this.getNodeParameter('phoneNumber') as string;
         const wsUrl = `${wsBaseUrl}/${phoneNumber}`;
 
-        const ws = new ReconnectingWebSocket(wsUrl);
+        const ws = new ReconnectingWebSocket(wsUrl, [], {WebSocket});
 
         ws.addEventListener('open', () => {
             this.logger.info('Opened WebSocket connection to ' + wsUrl);
