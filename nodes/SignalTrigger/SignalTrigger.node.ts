@@ -1,6 +1,5 @@
 import {INodeType, INodeTypeDescription, ITriggerFunctions, ITriggerResponse, NodeConnectionType,} from 'n8n-workflow';
 
-import WebSocket from 'ws';
 import ReconnectingWebSocket from "reconnecting-websocket";
 
 export class SignalTrigger implements INodeType {

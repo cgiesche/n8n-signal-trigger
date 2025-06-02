@@ -15,8 +15,7 @@
     ]
   },
   "dependencies": {
-    "reconnecting-websocket": "^4.4.0",
-    "ws": "^8.18.2"
+    "reconnecting-websocket": "^4.4.0"
   },
   "devDependencies": {
     "@types/node": "^22.15.19",
